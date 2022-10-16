@@ -28,4 +28,15 @@ return packer.startup(function(use)
 
   -- Color schemes
   use 'LunarVim/darkplus.nvim' -- Dark+ theme from VS Code
+
+  -- Autocomplete
+  use 'hrsh7th/nvim-cmp'         -- Completion engine
+  use 'hrsh7th/cmp-buffer'       -- Buffer completions
+  use 'hrsh7th/cmp-path'         -- Path completions
+  use 'hrsh7th/cmp-cmdline'      -- Cmdline completions
+  use 'saadparwaiz1/cmp_luasnip' -- Snippet completions
+
+  -- Snippets
+  use 'L3MON4D3/LuaSnip'             -- Snippet engine
+  use 'rafamadriz/friendly-snippets' -- A bunch of premade snippets
 end)
