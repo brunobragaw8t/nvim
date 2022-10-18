@@ -10,3 +10,4 @@ vim.opt.fileformats = 'unix'      -- Set line ending to LF
 vim.opt.shiftwidth = 2            -- Set tab width to 2 spaces
 vim.opt.tabstop = 2               -- Set tab width to 2 spaces
 vim.opt.expandtab = true          -- Convert tabs to spaces
+vim.opt.updatetime = 300          -- Faster completion. Default is 4000 ms
