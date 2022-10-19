@@ -23,8 +23,9 @@ packer.init {
 
 -- Install plugins
 return packer.startup(function(use)
-  -- Have Packer manage itself
-  use 'wbthomason/packer.nvim'
+  -- General
+  use 'wbthomason/packer.nvim' -- Have Packer manage itself
+  use 'nvim-lua/plenary.nvim'  -- Dependency for multiple plugins
 
   -- Color schemes
   use 'LunarVim/darkplus.nvim' -- Dark+ theme from VS Code
@@ -44,4 +45,8 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine 
   use "williamboman/nvim-lsp-installer" -- Language server installer
+
+  -- Telescope
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-media-files.nvim'
 end)
