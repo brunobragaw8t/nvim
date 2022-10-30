@@ -49,4 +49,21 @@ return packer.startup(function(use)
   -- Telescope
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
+
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  }
+  use 'p00f/nvim-ts-rainbow'
+
+  -- Autopairs
+  use 'windwp/nvim-autopairs' -- Automatically open closing bracket
+
+  -- Comments
+  use 'numToStr/Comment.nvim'                       -- Easily comment stuff
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- Context awareness for correct comment syntax
+
+  -- Git
+  use 'lewis6991/gitsigns.nvim'
 end)
