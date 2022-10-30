@@ -24,8 +24,9 @@ packer.init {
 -- Install plugins
 return packer.startup(function(use)
   -- General
-  use 'wbthomason/packer.nvim' -- Have Packer manage itself
-  use 'nvim-lua/plenary.nvim'  -- Dependency for multiple plugins
+  use 'wbthomason/packer.nvim'       -- Have Packer manage itself
+  use 'nvim-lua/plenary.nvim'        -- Dependency for multiple plugins
+  use 'kyazdani42/nvim-web-devicons' -- Icons for multiple purposes
 
   -- Color schemes
   use 'LunarVim/darkplus.nvim' -- Dark+ theme from VS Code
@@ -66,4 +67,7 @@ return packer.startup(function(use)
 
   -- Git
   use 'lewis6991/gitsigns.nvim'
+
+  -- File tree
+  use 'kyazdani42/nvim-tree.lua' -- File tree
 end)

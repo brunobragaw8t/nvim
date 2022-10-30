@@ -15,3 +15,6 @@ keymap('v', '<', '<gv', opts)
 
 -- Don't yank on paste
 keymap('v', 'p', '"_dP', opts)
+
+-- Tree
+keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', opts)
