@@ -70,4 +70,7 @@ return packer.startup(function(use)
 
   -- File tree
   use 'kyazdani42/nvim-tree.lua' -- File tree
+
+  -- Buffer line
+  use 'akinsho/bufferline.nvim'
 end)
