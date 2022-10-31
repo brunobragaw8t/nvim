@@ -29,7 +29,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- Icons for multiple purposes
 
   -- Color schemes
-  use 'LunarVim/darkplus.nvim' -- Dark+ theme from VS Code
+  use 'Mofiqul/vscode.nvim' -- Dark+ theme from VS Code
 
   -- Autocomplete
   use 'hrsh7th/nvim-cmp'         -- Completion engine
