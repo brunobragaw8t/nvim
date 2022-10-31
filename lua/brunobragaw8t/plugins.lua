@@ -73,4 +73,7 @@ return packer.startup(function(use)
 
   -- Buffer line
   use 'akinsho/bufferline.nvim'
+
+  -- Status line
+  use 'nvim-lualine/lualine.nvim'
 end)
