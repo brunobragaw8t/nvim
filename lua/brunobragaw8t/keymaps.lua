@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -15,6 +14,3 @@ keymap('v', '<', '<gv', opts)
 
 -- Don't yank on paste
 keymap('v', 'p', '"_dP', opts)
-
--- Tree
-keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', opts)

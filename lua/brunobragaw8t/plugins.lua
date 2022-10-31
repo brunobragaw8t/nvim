@@ -68,7 +68,7 @@ return packer.startup(function(use)
   -- Git
   use 'lewis6991/gitsigns.nvim'
 
-  -- File tree
+  -- nvim-tree
   use 'kyazdani42/nvim-tree.lua' -- File tree
 
   -- Buffer line
