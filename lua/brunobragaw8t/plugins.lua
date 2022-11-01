@@ -76,4 +76,7 @@ return packer.startup(function(use)
 
   -- Status line
   use 'nvim-lualine/lualine.nvim'
+
+  -- Terminal
+  use 'akinsho/toggleterm.nvim'
 end)
