@@ -44,7 +44,7 @@ return packer.startup(function(use)
   use 'rafamadriz/friendly-snippets' -- A bunch of premade snippets
 
   -- LSP
-  use "neovim/nvim-lspconfig"           -- LSP engine 
+  use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
 
   -- Telescope
@@ -79,4 +79,7 @@ return packer.startup(function(use)
 
   -- Terminal
   use 'akinsho/toggleterm.nvim'
+
+  -- Trim
+  use 'cappyzawa/trim.nvim' -- Trim whitespace and final lines
 end)
