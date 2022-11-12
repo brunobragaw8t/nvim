@@ -79,7 +79,4 @@ return packer.startup(function(use)
 
   -- Terminal
   use 'akinsho/toggleterm.nvim'
-
-  -- Trim
-  use 'cappyzawa/trim.nvim' -- Trim whitespace and final lines
 end)
