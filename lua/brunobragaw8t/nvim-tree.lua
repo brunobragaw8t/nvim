@@ -3,7 +3,10 @@ if not status_ok then
   return
 end
 
-nvim_tree.setup {
+nvim_tree.setup({
+  view = {
+    adaptive_size = true,
+  },
   actions = {
     open_file = {
       quit_on_open = true, -- Close tree when opening a file
@@ -28,7 +31,7 @@ nvim_tree.setup {
       },
     },
   },
-}
+})
 
 -- Mappings
 local opts = { noremap = true, silent = true }

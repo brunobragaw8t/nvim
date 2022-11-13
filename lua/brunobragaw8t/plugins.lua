@@ -26,6 +26,9 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
 
+  -- nvim-tree
+  use "kyazdani42/nvim-tree.lua" -- File tree
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
@@ -58,9 +61,6 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-
-  -- nvim-tree
-  use "kyazdani42/nvim-tree.lua" -- File tree
 
   -- Buffer line
   use "akinsho/bufferline.nvim"
