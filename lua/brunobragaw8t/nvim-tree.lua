@@ -1,4 +1,4 @@
-local status_ok, nvim_tree = pcall(require, 'nvim-tree')
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
   return
 end
@@ -14,15 +14,15 @@ nvim_tree.setup {
   },
   renderer = {
     icons = {
-      git_placement = 'after',
+      git_placement = "after",
       glyphs = {
         git = {
-          unstaged = '',
-          staged = '✓',
-          unmerged = '═',
-          renamed = '',
-          untracked = '',
-          deleted = '',
+          unstaged = "",
+          staged = "✓",
+          unmerged = "═",
+          renamed = "",
+          untracked = "",
+          deleted = "",
           ignored = "",
         },
       },
@@ -32,4 +32,4 @@ nvim_tree.setup {
 
 -- Mappings
 local opts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', opts)
+vim.api.nvim_set_keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)

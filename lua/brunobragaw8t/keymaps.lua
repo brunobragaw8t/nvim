@@ -1,16 +1,13 @@
 local opts = { noremap = true, silent = true }
 
--- Shorten function name
-local keymap = vim.api.nvim_set_keymap
-
 -- Map Space as Leader
-keymap('', '<Space>', '<Nop>', opts)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Stay in visual mode after indenting
-keymap('v', '>', '>gv', opts)
-keymap('v', '<', '<gv', opts)
+vim.api.nvim_set_keymap("v", ">", ">gv", opts)
+vim.api.nvim_set_keymap("v", "<", "<gv", opts)
 
 -- Don't yank on paste
-keymap('v', 'p', '"_dP', opts)
+vim.api.nvim_set_keymap("v", "p", '"_dP', opts)

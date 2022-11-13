@@ -3,14 +3,14 @@ local M = {}
 
 M.setup = function()
   local signs = {
-    { name = 'DiagnosticSignError', text = '' },
-    { name = 'DiagnosticSignWarn', text = '' },
-    { name = 'DiagnosticSignHint', text = '' },
-    { name = 'DiagnosticSignInfo', text = '' },
+    { name = "DiagnosticSignError", text = "" },
+    { name = "DiagnosticSignWarn", text = "" },
+    { name = "DiagnosticSignHint", text = "" },
+    { name = "DiagnosticSignInfo", text = "" },
   }
 
   for _, sign in ipairs(signs) do
-    vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = '' })
+    vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
   end
 
   local config = {
@@ -46,8 +46,8 @@ end
 local function lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
 
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
 end
 
 M.on_attach = function(client, bufnr)
@@ -57,7 +57,7 @@ end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-local status_ok, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_ok then
   return
 end
