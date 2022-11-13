@@ -7,7 +7,7 @@ telescope.load_extension("media_files")
 
 local actions = require("telescope.actions")
 
-telescope.setup {
+telescope.setup({
   defaults = {
     mappings = {
       i = {
@@ -20,7 +20,7 @@ telescope.setup {
   extensions = {
     filetypes = {"png", "webp", "jpg", "jpeg"},
   },
-}
+})
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<Leader>f", builtin.find_files, {})

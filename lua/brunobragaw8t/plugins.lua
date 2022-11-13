@@ -22,6 +22,10 @@ return packer.startup(function(use)
   -- Color schemes
   use "Mofiqul/vscode.nvim" -- Dark+ theme from VS Code
 
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
@@ -37,10 +41,6 @@ return packer.startup(function(use)
   -- Snippets
   use "L3MON4D3/LuaSnip"             -- Snippet engine
   use "rafamadriz/friendly-snippets" -- A bunch of premade snippets
-
-  -- Telescope
-  use "nvim-telescope/telescope.nvim"
-  use "nvim-telescope/telescope-media-files.nvim"
 
   -- Treesitter
   use {
