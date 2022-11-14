@@ -31,6 +31,9 @@ nvim_tree.setup({
       },
     },
   },
+  git = {
+    ignore = false,
+  },
 })
 
 -- Mappings
