@@ -29,6 +29,9 @@ return packer.startup(function(use)
   -- nvim-tree
   use "kyazdani42/nvim-tree.lua" -- File tree
 
+  -- Status line
+  use "nvim-lualine/lualine.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
@@ -64,9 +67,6 @@ return packer.startup(function(use)
 
   -- Buffer line
   use "akinsho/bufferline.nvim"
-
-  -- Status line
-  use "nvim-lualine/lualine.nvim"
 
   -- Terminal
   use "akinsho/toggleterm.nvim"
