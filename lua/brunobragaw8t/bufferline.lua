@@ -5,6 +5,17 @@ end
 
 bufferline.setup {
   options = {
+    indicator = {
+      style = 'underline',
+    },
+    offsets = {
+      {
+        filetype = "NvimTree",
+        text = "EXPLORER",
+        text_align = "center",
+        separator = false,
+      },
+    },
     diagnostics = "nvim_lsp",
     show_buffer_close_icons = false,
     show_close_icon = false,

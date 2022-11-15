@@ -32,6 +32,9 @@ return packer.startup(function(use)
   -- Status line
   use "nvim-lualine/lualine.nvim"
 
+  -- Buffer line
+  use "akinsho/bufferline.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
@@ -64,9 +67,6 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-
-  -- Buffer line
-  use "akinsho/bufferline.nvim"
 
   -- Terminal
   use "akinsho/toggleterm.nvim"
