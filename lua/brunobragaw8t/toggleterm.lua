@@ -5,5 +5,5 @@ end
 
 term.setup {
   open_mapping = [[<C-t>]],
-  direction = "tab",
+  direction = "float",
 }
