@@ -28,8 +28,7 @@ telescope.setup({
 
 -- Mappings
 local opts = { noremap = true, silent = true }
-local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<Leader>f", builtin.find_files, opts)
-vim.keymap.set("n", "<Leader>F", builtin.live_grep, opts)
-vim.keymap.set("n", "<Leader>g", builtin.git_status, opts)
+vim.keymap.set("n", "<Leader>f", ":Telescope find_files<CR>", opts)
+vim.keymap.set("n", "<Leader>F", ":Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<Leader>g", ":Telescope git_status<CR>", opts)
 vim.keymap.set("n", "<Leader>p", ":Telescope projects<CR>", opts)

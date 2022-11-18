@@ -41,6 +41,9 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- Which key
+  use "folke/which-key.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
