@@ -38,6 +38,9 @@ return packer.startup(function(use)
   -- Terminal
   use "akinsho/toggleterm.nvim"
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"           -- LSP engine
   use "williamboman/nvim-lsp-installer" -- Language server installer
@@ -67,7 +70,4 @@ return packer.startup(function(use)
   -- Comments
   use "numToStr/Comment.nvim"                       -- Easily comment stuff
   use "JoosepAlviste/nvim-ts-context-commentstring" -- Context awareness for correct comment syntax
-
-  -- Git
-  use "lewis6991/gitsigns.nvim"
 end)
