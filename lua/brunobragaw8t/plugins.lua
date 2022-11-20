@@ -45,8 +45,8 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- LSP
-  -- use "neovim/nvim-lspconfig"           -- LSP engine
-  -- use "williamboman/nvim-lsp-installer" -- Language server installer
+  use "neovim/nvim-lspconfig"   -- LSP engine
+  use "williamboman/mason.nvim" -- Language server installer
 
   -- Autocomplete
   -- use "hrsh7th/nvim-cmp"         -- Completion engine
