@@ -48,6 +48,12 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"   -- LSP engine
   use "williamboman/mason.nvim" -- Language server installer
 
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+
   -- Autocomplete
   -- use "hrsh7th/nvim-cmp"         -- Completion engine
   -- use "hrsh7th/cmp-buffer"       -- Buffer completions
@@ -59,13 +65,6 @@ return packer.startup(function(use)
   -- Snippets
   -- use "L3MON4D3/LuaSnip"             -- Snippet engine
   -- use "rafamadriz/friendly-snippets" -- A bunch of premade snippets
-
-  -- Treesitter
-  -- use {
-  --   "nvim-treesitter/nvim-treesitter",
-  --   run = ":TSUpdate",
-  -- }
-  -- use "p00f/nvim-ts-rainbow"
 
   -- Autopairs
   -- use "windwp/nvim-autopairs" -- Automatically open closing bracket
