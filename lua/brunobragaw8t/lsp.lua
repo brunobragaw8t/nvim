@@ -37,3 +37,7 @@ require("lspconfig").sumneko_lua.setup({
     },
   },
 })
+
+require("lspconfig").intelephense.setup({
+  on_attach = on_attach,
+})
