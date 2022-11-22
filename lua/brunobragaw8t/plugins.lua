@@ -47,6 +47,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"   -- LSP engine
   use "williamboman/mason.nvim" -- Language server installer
+  use "glepnir/lspsaga.nvim"    -- UI
 
   -- Treesitter
   use {
