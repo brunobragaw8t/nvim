@@ -54,6 +54,9 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
 
+  -- Null-ls
+  use "jose-elias-alvarez/null-ls.nvim"
+
   -- Autocomplete
   -- use "hrsh7th/nvim-cmp"         -- Completion engine
   -- use "hrsh7th/cmp-buffer"       -- Buffer completions
