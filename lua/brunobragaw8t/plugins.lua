@@ -58,6 +58,9 @@ return packer.startup(function(use)
   -- Null-ls
   use "jose-elias-alvarez/null-ls.nvim"
 
+  -- Tidy
+  use "mcauley-penney/tidy.nvim" -- Trim whitespaces
+
   -- Autocomplete
   -- use "hrsh7th/nvim-cmp"         -- Completion engine
   -- use "hrsh7th/cmp-buffer"       -- Buffer completions
