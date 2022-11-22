@@ -41,8 +41,3 @@ require("lspconfig").sumneko_lua.setup({
 require("lspconfig").intelephense.setup({
   on_attach = on_attach,
 })
-
-require("lspconfig").volar.setup({
-  on_attach = on_attach,
-  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' },
-})
