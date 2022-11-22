@@ -7,7 +7,6 @@ null_ls.setup({
   sources = {
     null_ls.builtins.diagnostics.eslint,
     null_ls.builtins.code_actions.eslint,
-    null_ls.builtins.diagnostics.php,
-    null_ls.builtins.code_actions.php,
+    null_ls.builtins.diagnostics.phpcs,
   },
 })
