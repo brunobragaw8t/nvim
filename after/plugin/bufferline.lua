@@ -8,7 +8,6 @@ require("bufferline").setup({
         filetype = "NvimTree",
         text = "EXPLORER",
         text_align = "center",
-        separator = false,
       },
     },
     diagnostics = "nvim_lsp",
