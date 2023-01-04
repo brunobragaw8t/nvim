@@ -2,7 +2,6 @@
 vim.diagnostic.config({
   severity_sort = true,
   signs = false,
-  -- virtual_text = false,
 })
 
 -- Mappings
@@ -31,12 +30,13 @@ local lspconfig = require("lspconfig");
 --   },
 -- })
 
--- require("lspconfig").intelephense.setup({
---   on_attach = on_attach,
--- })
+require("lspconfig").intelephense.setup({
+  on_attach = on_attach,
+})
 
 lspconfig.volar.setup({
   on_attach = on_attach,
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
 })
 
 lspconfig.tailwindcss.setup({
