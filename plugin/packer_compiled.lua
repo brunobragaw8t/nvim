@@ -112,7 +112,7 @@ _G.packer_plugins = {
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Bruno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
+    url = "https://github.com/yioneko/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

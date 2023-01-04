@@ -26,17 +26,13 @@ return require("packer").startup(function(use)
   use "neovim/nvim-lspconfig"   -- LSP engine
   use "williamboman/mason.nvim" -- Language server installer
 
+  -- CMP: completion
+  use "yioneko/nvim-cmp"     -- Completion engine (this is a fork to fix typing lags)
+  use "L3MON4D3/LuaSnip"     -- Snippet engine
+  use "hrsh7th/cmp-nvim-lsp" -- LSP completions
+
   -- Treesitter: syntax highlighting
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-
-  -- CMP: completion
-  use "hrsh7th/nvim-cmp"         -- Completion engine
-  use "L3MON4D3/LuaSnip"         -- Snippet engine
-  -- use "saadparwaiz1/cmp_luasnip" -- Snippet completions
-  use "hrsh7th/cmp-nvim-lsp"     -- LSP completions
-  -- use "hrsh7th/cmp-buffer"       -- Buffer completions
-  -- use "hrsh7th/cmp-path"         -- Path completions
-  -- use "hrsh7th/cmp-cmdline"      -- Cmdline completions
 
   -- Null-ls: format & lint
   use "jose-elias-alvarez/null-ls.nvim"
