@@ -8,9 +8,6 @@ require("nvim-tree").setup({
       quit_on_open = true, -- Close tree when opening a file
     },
   },
-  diagnostics = {
-    enable = true,
-  },
   renderer = {
     icons = {
       git_placement = "after",
