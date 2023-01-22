@@ -9,3 +9,4 @@ vim.opt.fileformats = "unix"      -- Set default end-of-line character to LF
 vim.opt.shiftwidth = 2            -- Set tab width to 2 spaces
 vim.opt.tabstop = 2               -- Set tab width to 2 spaces
 vim.opt.expandtab = true          -- Convert tabs to spaces
+vim.opt.undofile = true           -- Save undo history for closed files
