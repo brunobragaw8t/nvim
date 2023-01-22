@@ -9,6 +9,7 @@ local on_attach = function(client, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+  vim.keymap.set({"n", "i"}, "<C-k>", vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, bufopts)
   vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, bufopts)
 end
