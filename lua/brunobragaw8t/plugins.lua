@@ -20,7 +20,8 @@ return require("packer").startup(function(use)
   use "akinsho/bufferline.nvim"
 
   -- Git
-  use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"      -- Git commands
+  use "lewis6991/gitsigns.nvim" -- Git changes signs
 
   -- LSP: Language Server Protocol
   use "neovim/nvim-lspconfig"             -- LSP engine
