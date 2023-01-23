@@ -85,7 +85,6 @@ cmp.setup({
     ["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
-    ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
     ["<CR>"] = cmp.mapping.confirm({ select = false }),
   }),
@@ -94,25 +93,3 @@ cmp.setup({
     { name = "luasnip" },
   }),
 })
-
-
-
-
-local lspconfig = require("lspconfig");
-
--- Servers
--- require("lspconfig").sumneko_lua.setup({
---   on_attach = on_attach,
---   settings = {
---     Lua = {
---       diagnostics = {
---         globals = { "vim" },
---       },
---     },
---   },
--- })
-
-require("lspconfig").intelephense.setup({
-  on_attach = on_attach,
-})
-
