@@ -15,7 +15,7 @@ return require("packer").startup(function(use)
 
   -- Lua line: status line
   use "nvim-lualine/lualine.nvim"
-  
+
   -- Buffer line: tabs
   use "akinsho/bufferline.nvim"
 
