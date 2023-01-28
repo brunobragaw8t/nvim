@@ -21,9 +21,11 @@ end
 -- Define servers to install
 local servers = {
   sumneko_lua = {
-    Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
+    settings = {
+      Lua = {
+        workspace = { checkThirdParty = false },
+        telemetry = { enable = false },
+      },
     },
   },
   volar = {
@@ -59,11 +61,24 @@ mason_lspconfig.setup {
 
 mason_lspconfig.setup_handlers {
   function(server_name)
-    require("lspconfig")[server_name].setup {
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = servers[server_name],
-    }
+    if rawget(servers, server_name) == nil then
+      return
+    end
+
+    local server_to_setup = {}
+
+    server_to_setup.capabilities = capabilities
+    server_to_setup.on_attach = on_attach
+
+    if rawget(servers[server_name], "settings") ~= nil then
+      server_to_setup.settings = servers[server_name].settings
+    end
+
+    if rawget(servers[server_name], "filetypes") ~= nil then
+      server_to_setup.filetypes = servers[server_name].filetypes
+    end
+
+    require("lspconfig")[server_name].setup(server_to_setup)
   end,
 }
 
