@@ -16,6 +16,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set({"n", "i"}, "<C-k>", vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, bufopts)
   vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set("n", "<Leader>fm", vim.lsp.buf.format, bufopts)
 end
 
 -- Define servers to install
@@ -31,6 +32,7 @@ local servers = {
   volar = {
     filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
   },
+  eslint = {},
   tailwindcss = {},
 }
 

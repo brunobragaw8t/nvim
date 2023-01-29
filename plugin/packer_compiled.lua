@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Bruno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Bruno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Bruno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",

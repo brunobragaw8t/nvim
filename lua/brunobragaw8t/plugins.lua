@@ -38,7 +38,4 @@ return require("packer").startup(function(use)
 
   -- Treesitter: syntax highlighting
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-
-  -- Null-ls: format & lint
-  use "jose-elias-alvarez/null-ls.nvim"
 end)
