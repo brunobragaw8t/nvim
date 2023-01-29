@@ -8,5 +8,4 @@ vim.keymap.set("v", "p", '"_dP')
 vim.keymap.set("n", "<Esc>", ":nohls<CR>", { silent = true })
 
 -- Save with Ctrl+S
-vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", { silent = true })
-vim.keymap.set("n", "<C-s>", ":w<CR>", { silent = true })
+vim.keymap.set({"i", "n", "v", "x"}, "<C-s>", vim.cmd.write, { silent = true })
