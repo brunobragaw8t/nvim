@@ -38,4 +38,7 @@ return require("packer").startup(function(use)
 
   -- Treesitter: syntax highlighting
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+
+  -- Comment
+  use 'numToStr/Comment.nvim'
 end)
