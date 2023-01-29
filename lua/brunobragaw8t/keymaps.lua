@@ -9,3 +9,7 @@ vim.keymap.set("n", "<Esc>", ":nohls<CR>", { silent = true })
 
 -- Save with Ctrl+S
 vim.keymap.set({"i", "n", "v", "x"}, "<C-s>", vim.cmd.write, { silent = true })
+
+-- Move lines
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
