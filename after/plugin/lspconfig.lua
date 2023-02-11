@@ -34,6 +34,7 @@ local servers = {
   },
   eslint = {},
   tailwindcss = {},
+  intelephense = {},
 }
 
 -- Setup Neovim Lua configuration
@@ -106,5 +107,7 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
     { name = "luasnip" },
+    { name = "path" },
+    { name = "buffer" },
   }),
 })

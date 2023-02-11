@@ -32,9 +32,11 @@ return require("packer").startup(function(use)
 
   -- CMP: completion
   use "hrsh7th/nvim-cmp"         -- Completion engine (this is a fork to fix typing lags)
-  use "L3MON4D3/LuaSnip"         -- Snippet engine
   use "hrsh7th/cmp-nvim-lsp"     -- LSP completions
+  use "hrsh7th/cmp-buffer"       -- Buffer completions
+  use "hrsh7th/cmp-path"         -- Path completions
   use "saadparwaiz1/cmp_luasnip" -- LuaSnip completion source for CMP
+  use "L3MON4D3/LuaSnip"         -- Snippet engine
 
   -- Treesitter: syntax highlighting
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
