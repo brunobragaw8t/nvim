@@ -3,6 +3,7 @@ require("nvim-treesitter.configs").setup({
     "css",
     "help",
     "html",
+    "http",
     "javascript",
     "json",
     "lua",

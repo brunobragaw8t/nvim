@@ -43,4 +43,7 @@ return require("packer").startup(function(use)
 
   -- Comment
   use 'numToStr/Comment.nvim'
+
+  -- HTTP Client
+  use "rest-nvim/rest.nvim"
 end)
