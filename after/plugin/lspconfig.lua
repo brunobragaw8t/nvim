@@ -21,7 +21,7 @@ end
 
 -- Define servers to install
 local servers = {
-  sumneko_lua = {
+  lua_ls = {
     settings = {
       Lua = {
         workspace = { checkThirdParty = false },
