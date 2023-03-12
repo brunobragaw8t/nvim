@@ -29,12 +29,12 @@ local servers = {
       },
     },
   },
-  volar = {
-    filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-  },
+  -- volar = {
+  --   filetypes = { "typescript", "javascript", "vue", "json" },
+  -- },
+  -- tailwindcss = {},
+  tsserver = {},
   eslint = {},
-  tailwindcss = {},
-  intelephense = {},
 }
 
 -- Setup Neovim Lua configuration
