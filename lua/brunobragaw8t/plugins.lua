@@ -31,7 +31,7 @@ return require("packer").startup(function(use)
   use "folke/neodev.nvim"                 -- Additional Lua Neovim configuration
 
   -- CMP: completion
-  use "hrsh7th/nvim-cmp"         -- Completion engine (this is a fork to fix typing lags)
+  use "hrsh7th/nvim-cmp"         -- Completion engine
   use "hrsh7th/cmp-nvim-lsp"     -- LSP completions
   use "hrsh7th/cmp-buffer"       -- Buffer completions
   use "hrsh7th/cmp-path"         -- Path completions
