@@ -11,4 +11,4 @@ vim.opt.tabstop = 2               -- Set tab width to 2 spaces
 vim.opt.expandtab = true          -- Convert tabs to spaces
 vim.opt.undofile = true           -- Save undo history for closed files
 vim.opt.colorcolumn = "80,120"    -- Set line-length rulers
-vim.opt.modeline = false
+vim.opt.modeline = false          -- Hide error when opening CRLF lifes
