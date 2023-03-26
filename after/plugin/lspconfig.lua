@@ -17,6 +17,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, bufopts)
   vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, bufopts)
   vim.keymap.set("n", "<Leader>fm", vim.lsp.buf.format, bufopts)
+  vim.keymap.set("n", "<Leader>fa", "<Cmd>EslintFixAll<CR>", bufopts)
 end
 
 -- Define servers to install
