@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- Bridge gap between LSP and Mason
   use "j-hui/fidget.nvim"                 -- Useful status updates for LSP
   use "folke/neodev.nvim"                 -- Additional Lua Neovim configuration
+  use "ray-x/lsp_signature.nvim"          -- Display signature help on type
 
   -- CMP: completion
   use "hrsh7th/nvim-cmp"         -- Completion engine
