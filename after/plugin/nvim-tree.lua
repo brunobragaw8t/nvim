@@ -1,7 +1,6 @@
 require("nvim-tree").setup({
   view = {
     adaptive_size = true,
-    hide_root_folder = true,
   },
   actions = {
     open_file = {
@@ -9,6 +8,7 @@ require("nvim-tree").setup({
     },
   },
   renderer = {
+    root_folder_label = false,
     icons = {
       git_placement = "after",
       glyphs = {
