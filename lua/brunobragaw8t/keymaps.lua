@@ -26,3 +26,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+
+-- Move around windows
+vim.keymap.set("n", "<C-Q>k", "<C-W>k")
+vim.keymap.set("n", "<C-Q>l", "<C-W>l")
+vim.keymap.set("n", "<C-Q>j", "<C-W>j")
+vim.keymap.set("n", "<C-Q>h", "<C-W>h")
