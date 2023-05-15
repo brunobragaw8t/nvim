@@ -16,6 +16,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Ctrl-Backspace tp delete word backwards
 vim.keymap.set("i", "<C-H>", "<C-W>")
+vim.keymap.set("c", "<C-H>", "<C-W>")
 
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
