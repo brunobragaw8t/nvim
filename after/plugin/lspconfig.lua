@@ -111,4 +111,12 @@ cmp.setup({
     { name = "path" },
     { name = "buffer" },
   }),
+  window = {
+    completion = cmp.config.window.bordered({
+      border = "rounded",
+    }),
+    documentation = cmp.config.window.bordered({
+      border = "rounded",
+    })
+  },
 })
