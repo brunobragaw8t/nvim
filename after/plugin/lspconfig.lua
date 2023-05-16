@@ -2,6 +2,9 @@
 vim.diagnostic.config({
   severity_sort = true,
   signs = false,
+  float = {
+    border = "rounded",
+  },
 })
 
 -- Set general keymaps
