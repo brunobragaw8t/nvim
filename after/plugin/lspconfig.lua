@@ -20,6 +20,12 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "<Leader>fa", "<Cmd>EslintFixAll<CR>", bufopts)
 end
 
+-- Set LSP handler settings
+local handlers = {
+  ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {border = "rounded"}),
+  ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {border = "rounded"}),
+}
+
 -- Define servers to install
 local servers = {
   lua_ls = {
@@ -73,6 +79,7 @@ mason_lspconfig.setup_handlers {
 
     server_to_setup.capabilities = capabilities
     server_to_setup.on_attach = on_attach
+    server_to_setup.handlers = handlers
 
     if rawget(servers[server_name], "settings") ~= nil then
       server_to_setup.settings = servers[server_name].settings
