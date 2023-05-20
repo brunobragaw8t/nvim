@@ -28,8 +28,8 @@ return {
       })
 
       -- Set general keymaps
-      vim.keymap.set('n', "<Ç>", vim.diagnostic.goto_next)
-      vim.keymap.set('n', "<S-Ç>", vim.diagnostic.goto_prev)
+      vim.keymap.set('n', "\\", vim.diagnostic.goto_next)
+      vim.keymap.set('n', "<M-\\>", vim.diagnostic.goto_prev)
 
       -- Set buffer-specific keymaps
       local on_attach = function(_, bufnr)
