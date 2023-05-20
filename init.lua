@@ -1,1 +1,3 @@
-require("brunobragaw8t")
+require("options")
+require("keymaps")
+require("plugin-manager")
