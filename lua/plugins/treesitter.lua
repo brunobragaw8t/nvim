@@ -5,7 +5,7 @@ return {
   },
   build = ":TSUpdate",
   config = function()
-    require('nvim-treesitter.configs').setup({
+    require("nvim-treesitter.configs").setup({
       ensure_installed = {
         "css",
         "html",
@@ -26,10 +26,10 @@ return {
         swap = {
           enable = true,
           swap_next = {
-            ['<Leader>a'] = '@parameter.inner',
+            ["<Leader>a"] = "@parameter.inner",
           },
           swap_previous = {
-            ['<Leader>A'] = '@parameter.inner',
+            ["<Leader>A"] = "@parameter.inner",
           },
         },
       },
