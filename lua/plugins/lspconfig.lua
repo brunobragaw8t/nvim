@@ -76,6 +76,12 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
+      -- Set LSP handler settings
+      local handlers = {
+        ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {border = "rounded"}),
+        ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {border = "rounded"}),
+      }
+
       -- Ensure the servers above are installed
       local mason_lspconfig = require("mason-lspconfig")
 
@@ -93,6 +99,7 @@ return {
 
           server_to_setup.capabilities = capabilities
           server_to_setup.on_attach = on_attach
+          server_to_setup.handlers = handlers
 
           if rawget(servers[server_name], "settings") ~= nil then
             server_to_setup.settings = servers[server_name].settings
@@ -130,6 +137,14 @@ return {
           { name = "path" },
           { name = "buffer" },
         }),
+        window = {
+          completion = cmp.config.window.bordered({
+            border = "rounded",
+          }),
+          documentation = cmp.config.window.bordered({
+            border = "rounded",
+          })
+        },
       })
 
       luasnip.config.setup({})
