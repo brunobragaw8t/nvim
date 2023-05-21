@@ -12,3 +12,4 @@ vim.opt.expandtab = true          -- Convert tabs to spaces
 vim.opt.undofile = true           -- Save undo history for closed files
 vim.opt.colorcolumn = "81,121"    -- Set line-length rulers
 vim.opt.modeline = false          -- Hide error when opening CRLF lifes
+vim.opt.updatetime = 500          -- Highlight faster
