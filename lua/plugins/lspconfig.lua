@@ -78,10 +78,8 @@ return {
             },
           },
         },
-        -- volar = {
-        --   filetypes = { "typescript", "javascript", "vue", "json" },
-        -- },
-        -- tailwindcss = {},
+        volar = {},
+        tailwindcss = {},
         tsserver = {},
         eslint = {},
       }
