@@ -23,6 +23,9 @@ require("lazy").setup(
     install = {
       colorscheme = { "vscode" }
     },
+    change_detection = {
+      notify = false, -- get a notification when changes are found
+    },
     performance = {
       rtp = {
         disabled_plugins = {
