@@ -1,5 +1,5 @@
 -- Map Space as Leader
-vim.g.mapLeader = " "
+vim.g.mapleader = " "
 
 -- Clear search highlight on Escape
 vim.keymap.set("n", "<Esc>", ":nohls<CR>", { silent = true })
