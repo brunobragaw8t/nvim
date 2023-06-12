@@ -72,7 +72,7 @@ return {
         capabilities = capabilities,
       }
 
-      vim.tbl_deep_extend("force", options, Opts)
+      Opts = vim.tbl_deep_extend("force", options, Opts)
 
       lspconfig[server].setup(Opts)
     end
