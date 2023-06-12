@@ -28,8 +28,8 @@ return {
       keymap(bufnr, "n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
       keymap(bufnr, "n", "<C-k>", "<Cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
       keymap(bufnr, "i", "<C-k>", "<Cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-      -- keymap(bufnr, "n", "gs", "", opts)
-      -- keymap(bufnr, "n", "gr", "", opts)
+      keymap(bufnr, "n", "gs", "<Cmd>Telescope lsp_document_symbols<CR>", opts)
+      keymap(bufnr, "n", "gr", "<Cmd>Telescope lsp_references<CR>", opts)
 
       keymap(bufnr, "n", "<leader>rn", "<Cmd>lua vim.lsp.buf.rename()<CR>", opts)
       keymap(bufnr, "n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>", opts)
