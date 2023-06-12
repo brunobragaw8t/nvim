@@ -19,5 +19,4 @@ vim.opt.timeoutlen = 300          -- Time to wait for a mapped sequence to compl
 vim.opt.showcmd = false           -- Hide (partial) command in the last line of the screen (for performance)
 vim.opt.signcolumn = "yes"        -- Always show the sign column, otherwise it would shift the text each time
 
--- vim.opt.showmode = false          -- we don't need to see things like -- INSERT -- anymore
 -- vim.opt.smartindent = true        -- make indenting smarter again
