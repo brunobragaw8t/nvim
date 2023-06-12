@@ -1,3 +1,3 @@
 require("options")
 require("keymaps")
-require("Lazy")
+require("plugin-manager")
