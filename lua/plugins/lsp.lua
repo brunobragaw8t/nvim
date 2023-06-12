@@ -46,7 +46,7 @@ return {
 
     local servers = {
       lua_ls = {
-        settigs = {
+        settings = {
           Lua = {
             diagnostics = {
               globals = { "vim" },
