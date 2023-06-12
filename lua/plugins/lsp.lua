@@ -64,6 +64,7 @@ return {
         },
       },
       tsserver = {},
+      volar = {},
     }
 
     for server, options in pairs(servers) do
