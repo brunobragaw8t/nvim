@@ -34,6 +34,14 @@ return {
       keymap(bufnr, "n", "<leader>rn", "<Cmd>lua vim.lsp.buf.rename()<CR>", opts)
       keymap(bufnr, "n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>", opts)
       keymap(bufnr, "n", "<leader>fm", "<Cmd>lua vim.lsp.buf.format()<CR>", opts)
+      keymap(bufnr, "n", "<leader>fa", "<Cmd>EslintFixAll<CR>", opts)
+
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        buffer = bufnr,
+        callback = function()
+          pcall(function() vim.cmd('EslintFixAll') end)
+        end
+      })
 
       keymap(bufnr, "n", "\\", "<Cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", opts)
       keymap(bufnr, "n", "<M-\\>", "<Cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", opts)
@@ -65,6 +73,7 @@ return {
       },
       tsserver = {},
       volar = {},
+      eslint = {},
     }
 
     for server, options in pairs(servers) do
