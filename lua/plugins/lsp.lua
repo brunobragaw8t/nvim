@@ -72,7 +72,13 @@ return {
         },
       },
       tsserver = {},
-      volar = {},
+      volar = {
+        init_options = {
+          typescript = {
+            tsdk = os.getenv("APPDATA") .. "/npm/node_modules/typescript/lib"
+          }
+        }
+      },
       eslint = {},
     }
 
