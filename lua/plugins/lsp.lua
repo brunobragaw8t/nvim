@@ -99,6 +99,9 @@ return {
       signs = false,
       update_in_insert = true,
       severity_sort = true,
+      float = {
+        border = "rounded",
+      },
     })
 
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
