@@ -80,6 +80,17 @@ return {
         }
       },
       eslint = {},
+      intelephense = {
+        settings = {
+          intelephense = {
+            environment = {
+              includePaths = {
+                "D:\\xampp\\htdocs\\stubs"
+              },
+            },
+          },
+        },
+      },
     }
 
     for server, options in pairs(servers) do
