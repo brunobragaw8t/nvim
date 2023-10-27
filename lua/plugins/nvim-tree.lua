@@ -9,6 +9,9 @@ return {
   },
   config = function()
     require("nvim-tree").setup({
+      git = {
+        enable = false,
+      },
       view = {
         adaptive_size = true,
       },
