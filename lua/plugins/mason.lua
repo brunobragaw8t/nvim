@@ -17,6 +17,8 @@ return {
         "lua_ls",
         "tsserver",
         "volar",
+        "eslint",
+        "intelephense",
       },
     })
   end
