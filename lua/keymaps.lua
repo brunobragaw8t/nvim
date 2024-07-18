@@ -27,6 +27,9 @@ vim.keymap.set("n", "<C-w>", "<Cmd>bd<CR>")
 -- Don't yank on pasting
 vim.keymap.set("v", "p", "P")
 
+-- Don't yank on deleting character
+vim.keymap.set("n", "x", '"_x')
+
 -- Stay in indent mode
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
