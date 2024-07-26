@@ -18,7 +18,7 @@ require("lazy").setup(
   {
     defaults = {
       lazy = true,
-      version = "57cce98dfdb2f2dd05a0567d89811e6d0505e13b"
+      version = "96584866b9c5e998cbae300594d0ccfd0c464627"
     },
     install = {
       colorscheme = { "vscode" }
