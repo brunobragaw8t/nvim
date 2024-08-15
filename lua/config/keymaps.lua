@@ -13,6 +13,8 @@ vim.keymap.set("n", "<C-Q>j", "<C-W>j")
 vim.keymap.set("n", "<C-Q>h", "<C-W>h")
 
 -- Close buffer
+vim.keymap.del("n", "<C-W>d") -- default Neovim keymap conflicting with mine
+vim.keymap.del("n", "<C-W><C-D>") -- default Neovim keymap conflicting with mine
 vim.keymap.set("n", "<C-w>", "<Cmd>bd<CR>")
 
 -- Don't yank on pasting
