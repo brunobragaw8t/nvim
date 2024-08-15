@@ -2,7 +2,7 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
     window = {
-      width = 0,
+      width = 30,
       auto_expand_width = true,
     },
     event_handlers = {
