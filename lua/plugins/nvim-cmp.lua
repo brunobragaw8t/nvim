@@ -15,8 +15,16 @@ return {
       ["<S-Tab>"] = cmp.mapping.select_prev_item(),
     }),
     window = {
-      completion = cmp.config.window.bordered(),
-      documentation = cmp.config.window.bordered(),
+      completion = {
+        winhighlight = "Normal:None,FloatBorder:None,Search:None",
+        winblend = 0,
+        border = "rounded",
+      },
+      documentation = {
+        winhighlight = "Normal:None,FloatBorder:None,Search:None",
+        winblend = 0,
+        border = "rounded",
+      },
     },
   },
 }
