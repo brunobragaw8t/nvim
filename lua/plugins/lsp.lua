@@ -77,7 +77,7 @@ return {
       },
       tsserver = {},
       volar = {
-        -- filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
+        filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
         -- init_options = {
         --   typescript = {
         --     tsdk = os.getenv("APPDATA") .. "/npm/node_modules/typescript/lib",
@@ -99,6 +99,13 @@ return {
     }
 
     for server, options in pairs(servers) do
+      -- Only start Volar if 'app.vue' exists in the root directory
+      if server == "volar" then
+        if not vim.loop.fs_stat(vim.loop.cwd() .. "/app.vue") then
+          goto continue
+        end
+      end
+
       Opts = {
         on_attach = on_attach,
         capabilities = capabilities,
@@ -107,6 +114,7 @@ return {
       Opts = vim.tbl_deep_extend("force", options, Opts)
 
       lspconfig[server].setup(Opts)
+      ::continue::
     end
 
     -- -- DIAGNOSTICS -- --
