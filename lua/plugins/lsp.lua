@@ -7,6 +7,10 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       commit = "0e6b2ed705ddcff9738ec4ea838141654f12eeef",
     },
+    {
+      "j-hui/fidget.nvim",
+      opts = {},
+    },
   },
   config = function()
     -- -- CAPABILITIES -- --
@@ -73,11 +77,12 @@ return {
       },
       tsserver = {},
       volar = {
-        init_options = {
-          typescript = {
-            tsdk = os.getenv("APPDATA") .. "/npm/node_modules/typescript/lib"
-          }
-        }
+        -- filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
+        -- init_options = {
+        --   typescript = {
+        --     tsdk = os.getenv("APPDATA") .. "/npm/node_modules/typescript/lib",
+        --   },
+        -- },
       },
       eslint = {},
       intelephense = {
