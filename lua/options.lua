@@ -17,6 +17,7 @@ vim.opt.fileencoding = "utf-8"    -- The encoding written to a file
 vim.opt.termguicolors = true      -- Set term gui colors
 vim.opt.timeoutlen = 300          -- Time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.showcmd = false           -- Hide (partial) command in the last line of the screen (for performance)
+vim.opt.showmode = false          -- Hide mode label from command line
 vim.opt.signcolumn = "yes"        -- Always show the sign column, otherwise it would shift the text each time
 
 -- vim.opt.smartindent = true        -- make indenting smarter again
