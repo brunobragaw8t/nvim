@@ -11,10 +11,7 @@ return {
         "json",
         "lua",
         "markdown",
-        "php",
-        "scss",
         "typescript",
-        "vue",
       },
       auto_install = false,
       highlight = {

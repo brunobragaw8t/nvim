@@ -16,9 +16,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "tsserver",
-        "volar",
         "eslint",
-        "intelephense",
       },
     })
   end
