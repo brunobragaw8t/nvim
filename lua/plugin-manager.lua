@@ -27,4 +27,9 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
   },
+
+  -- disable notification when changes are found
+  change_detection = {
+    notify = false,
+  },
 })
