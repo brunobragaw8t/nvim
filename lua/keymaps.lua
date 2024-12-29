@@ -51,4 +51,4 @@ vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
 
 -- Telescope
 vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>")
-vim.keymap.set("n", "<Leader>ft", "<Cmd>Telescope live_grep<CR>")
+vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>")
