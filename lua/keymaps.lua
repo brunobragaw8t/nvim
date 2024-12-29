@@ -1,8 +1,8 @@
 -- Clear search highlight on Escape
-vim.keymap.set("n", "<Esc>", "<Cmd>nohls<CR>", { silent = true })
+vim.keymap.set("n", "<Esc>", "<Cmd>nohls<CR>")
 
 -- Save with Ctrl+S
-vim.keymap.set({ "i", "n", "v", "x" }, "<C-s>", vim.cmd.write, { silent = true })
+vim.keymap.set({ "i", "n", "v", "x" }, "<C-s>", vim.cmd.write)
 
 -- Move lines
 vim.keymap.set("n", "<M-j>", "<Cmd>m .+1<CR>==")
@@ -39,16 +39,14 @@ vim.keymap.set("v", ">", ">gv")
 -- -- PLUGINS -- --
 
 -- Bufferline
-vim.keymap.set("n", "<C-l>", "<Cmd>BufferLineCycleNext<CR>", { silent = true })
-vim.keymap.set("n", "<C-h>", "<Cmd>BufferLineCyclePrev<CR>", { silent = true })
-vim.keymap.set("n", "<S-l>", "<Cmd>BufferLineMoveNext<CR>", { silent = true })
-vim.keymap.set("n", "<S-h>", "<Cmd>BufferLineMovePrev<CR>", { silent = true })
+vim.keymap.set("n", "<C-l>", "<Cmd>BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<C-h>", "<Cmd>BufferLineCyclePrev<CR>")
+vim.keymap.set("n", "<S-l>", "<Cmd>BufferLineMoveNext<CR>")
+vim.keymap.set("n", "<S-h>", "<Cmd>BufferLineMovePrev<CR>")
 
 -- NvimTree
-vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>", { silent = true })
+vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
 
 -- Telescope
-vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>", { silent = true })
-vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>", { silent = true })
-vim.keymap.set("n", "<Leader>fp", "<Cmd>Telescope projects<CR>", { silent = true })
-vim.keymap.set("n", "<Leader>fb", "<Cmd>Telescope buffers<CR>", { silent = true })
+vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>")
+vim.keymap.set("n", "<Leader>ft", "<Cmd>Telescope live_grep<CR>")
