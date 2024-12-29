@@ -52,6 +52,3 @@ vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>", { silent = tr
 vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>", { silent = true })
 vim.keymap.set("n", "<Leader>fp", "<Cmd>Telescope projects<CR>", { silent = true })
 vim.keymap.set("n", "<Leader>fb", "<Cmd>Telescope buffers<CR>", { silent = true })
-
--- Lsp
-vim.keymap.set("n", "<Leader>fm", "<Cmd>lua vim.lsp.buf.format({ async = true })<CR>", { silent = true })
