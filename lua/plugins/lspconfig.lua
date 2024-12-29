@@ -18,6 +18,26 @@ return {
     },
   },
   config = function()
-    require("lspconfig").lua_ls.setup({})
+    local on_attach = function(_, bufnr)
+      local opts = { noremap = true, silent = true }
+      local keymap = vim.api.nvim_buf_set_keymap
+
+      keymap(bufnr, "n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
+      keymap(bufnr, "n", "gD", "<Cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+      keymap(bufnr, "n", "<C-k>", "<Cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+      keymap(bufnr, "i", "<C-k>", "<Cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+      keymap(bufnr, "n", "gs", "<Cmd>Telescope lsp_document_symbols<CR>", opts)
+      keymap(bufnr, "n", "grr", "<Cmd>Telescope lsp_references<CR>", opts)
+      keymap(bufnr, "n", "<Leader>fa", "<Cmd>EslintFixAll<CR>", opts)
+      keymap(bufnr, "n", "\\", "<Cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", opts)
+      keymap(bufnr, "n", "<M-\\>", "<Cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", opts)
+    end
+
+    local server_opts = {
+      on_attach = on_attach,
+    }
+
+    require("lspconfig").lua_ls.setup(server_opts)
+    require("lspconfig").ts_ls.setup(server_opts)
   end,
 }
