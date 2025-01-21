@@ -18,7 +18,7 @@ return {
     },
   },
   config = function()
-    local on_attach = function(_, bufnr)
+    local on_attach = function(client, bufnr)
       local opts = { noremap = true, silent = true }
       local keymap = vim.api.nvim_buf_set_keymap
 
@@ -31,6 +31,13 @@ return {
       keymap(bufnr, "n", "<Leader>fa", "<Cmd>EslintFixAll<CR>", opts)
       keymap(bufnr, "n", "\\", "<Cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", opts)
       keymap(bufnr, "n", "<M-\\>", "<Cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", opts)
+
+      if client.name == "eslint" then
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          buffer = bufnr,
+          command = "EslintFixAll",
+        })
+      end
     end
 
     local server_opts = {
@@ -39,5 +46,6 @@ return {
 
     require("lspconfig").lua_ls.setup(server_opts)
     require("lspconfig").ts_ls.setup(server_opts)
+    require("lspconfig").eslint.setup(server_opts) -- bun add -g vscode-langservers-extracted
   end,
 }
