@@ -47,5 +47,7 @@ return {
     require("lspconfig").lua_ls.setup(server_opts)
     require("lspconfig").ts_ls.setup(server_opts)
     require("lspconfig").eslint.setup(server_opts) -- bun add -g vscode-langservers-extracted
+    require("lspconfig").emmet_language_server.setup(server_opts) -- bun add -g @olrtg/emmet-language-server
+    require("lspconfig").tailwindcss.setup(server_opts) -- bun add -g @tailwindcss/language-server
   end,
 }
