@@ -21,6 +21,7 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       javascript = { "prettierd" }, -- bun add -g @fsouza/prettier
+      javascriptreact = { "prettierd" }, -- bun add -g @fsouza/prettier
     },
     -- Set default options
     default_format_opts = {

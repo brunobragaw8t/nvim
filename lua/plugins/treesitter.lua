@@ -12,6 +12,9 @@ return {
         "query",
         "markdown",
         "markdown_inline",
+        "html",
+        "javascript",
+        "typescript",
       },
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
