@@ -45,6 +45,7 @@ vim.keymap.set("n", "<C-l>", "<Cmd>BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<C-h>", "<Cmd>BufferLineCyclePrev<CR>")
 vim.keymap.set("n", "<S-l>", "<Cmd>BufferLineMoveNext<CR>")
 vim.keymap.set("n", "<S-h>", "<Cmd>BufferLineMovePrev<CR>")
+vim.keymap.set("n", "<Leader>co", "<Cmd>BufferLineCloseOthers<CR>")
 
 -- NvimTree
 vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
