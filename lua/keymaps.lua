@@ -7,8 +7,8 @@ vim.keymap.set({ "i", "n", "v", "x" }, "<C-s>", vim.cmd.write)
 -- Move lines
 vim.keymap.set("n", "<M-j>", "<Cmd>m .+1<CR>==")
 vim.keymap.set("n", "<M-k>", "<Cmd>m .-2<CR>==")
-vim.keymap.set("v", "<M-j>", "<Cmd>m '>+1<CR>gv=gv")
-vim.keymap.set("v", "<M-k>", "<Cmd>m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<M-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv")
 
 -- Ctrl-Backspace to delete word backwards
 vim.keymap.set("i", "<C-h>", "<C-w>")
