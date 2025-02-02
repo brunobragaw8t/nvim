@@ -22,6 +22,8 @@ return {
       lua = { "stylua" },
       javascript = { "prettierd" }, -- bun add -g @fsouza/prettier
       javascriptreact = { "prettierd" }, -- bun add -g @fsouza/prettier
+      typescript = { "prettierd" }, -- bun add -g @fsouza/prettier
+      typescriptreact = { "prettierd" }, -- bun add -g @fsouza/prettier
     },
     -- Set default options
     default_format_opts = {
