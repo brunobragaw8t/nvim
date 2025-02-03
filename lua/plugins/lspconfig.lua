@@ -49,5 +49,6 @@ return {
     require("lspconfig").eslint.setup(server_opts) -- bun add -g vscode-langservers-extracted
     require("lspconfig").emmet_language_server.setup(server_opts) -- bun add -g @olrtg/emmet-language-server
     require("lspconfig").tailwindcss.setup(server_opts) -- bun add -g @tailwindcss/language-server
+    require("lspconfig").biome.setup(server_opts) -- bun add -g @biomejs/biome
   end,
 }
