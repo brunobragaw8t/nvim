@@ -28,6 +28,12 @@ return {
           border = "rounded",
         }),
       },
+      snippet = {
+        expand = function(args)
+          vim.snippet.expand(args.body)
+          vim.snippet.stop()
+        end,
+      },
     })
   end,
 }
