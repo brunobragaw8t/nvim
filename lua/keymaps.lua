@@ -4,6 +4,9 @@ vim.keymap.set("n", "<Esc>", "<Cmd>nohls<CR>")
 -- Save with Ctrl+S
 vim.keymap.set({ "i", "n", "v", "x" }, "<C-s>", vim.cmd.write)
 
+-- Quit
+vim.keymap.set("i", "<Leader>q", "<Cmd>q<CR>")
+
 -- Move lines
 vim.keymap.set("n", "<M-j>", "<Cmd>m .+1<CR>==")
 vim.keymap.set("n", "<M-k>", "<Cmd>m .-2<CR>==")
@@ -37,19 +40,3 @@ vim.keymap.set("n", "<Leader>y", "<Cmd>%y<CR>")
 -- Stay in indent mode
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
-
--- -- PLUGINS -- --
-
--- Bufferline
-vim.keymap.set("n", "<C-l>", "<Cmd>BufferLineCycleNext<CR>")
-vim.keymap.set("n", "<C-h>", "<Cmd>BufferLineCyclePrev<CR>")
-vim.keymap.set("n", "<S-l>", "<Cmd>BufferLineMoveNext<CR>")
-vim.keymap.set("n", "<S-h>", "<Cmd>BufferLineMovePrev<CR>")
-vim.keymap.set("n", "<Leader>co", "<Cmd>BufferLineCloseOthers<CR>")
-
--- NvimTree
-vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
-
--- Telescope
-vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>")
-vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>")

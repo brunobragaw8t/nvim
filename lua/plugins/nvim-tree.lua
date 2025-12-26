@@ -25,5 +25,7 @@ return {
         root_folder_label = false,
       },
     })
+
+    vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
   end,
 }
