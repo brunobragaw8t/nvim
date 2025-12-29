@@ -5,7 +5,7 @@ vim.keymap.set("n", "<Esc>", "<Cmd>nohls<CR>")
 vim.keymap.set({ "i", "n", "v", "x" }, "<C-s>", vim.cmd.write)
 
 -- Quit
-vim.keymap.set("i", "<Leader>q", "<Cmd>q<CR>")
+vim.keymap.set("n", "<Leader>q", "<Cmd>q<CR>")
 
 -- Move lines
 vim.keymap.set("n", "<M-j>", "<Cmd>m .+1<CR>==")
