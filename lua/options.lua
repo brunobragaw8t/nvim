@@ -5,10 +5,10 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 -- Display line numbers
-vim.opt.number = true
+vim.o.number = true
 
 -- Set line numbers as relative
-vim.opt.relativenumber = true
+vim.o.relativenumber = true
 
 -- Disable mouse
 vim.o.mouse = ""
@@ -87,3 +87,5 @@ vim.o.fileencoding = "utf-8"
 
 -- Set term gui colors
 vim.o.termguicolors = true
+
+vim.o.winborder = "rounded"
