@@ -29,6 +29,10 @@ return {
     end,
     formatters_by_ft = {
       lua = { "stylua" },
+      typescript = { "prettierd" },
+      typescriptreact = { "prettierd" },
+      vue = { "prettierd" },
+      css = { "prettierd" },
       -- Conform can run multiple formatters sequentially
       -- python = { "isort", "black" },
     },
