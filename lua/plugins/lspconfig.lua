@@ -34,6 +34,8 @@ return {
           require("telescope.builtin").lsp_dynamic_workspace_symbols,
           "vim.lsp.buf.document_symbol on whole workspace using Telescope"
         )
+        map("`", "<Cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", "Go to next diagnostic")
+        map("~", "<Cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", "Go to previous diagnostic")
 
         local client = vim.lsp.get_client_by_id(event.data.client_id)
 
