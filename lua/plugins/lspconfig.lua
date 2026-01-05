@@ -125,6 +125,8 @@ return {
           },
         },
       },
+      cssls = {},
+      jsonls = {},
     }
 
     -- Ensure the servers and tools above are installed
@@ -133,10 +135,10 @@ return {
     -- run :Mason
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
-      "stylua", -- Used to format Lua code
-      "vue_ls",
-      "vtsls",
-      "prettierd", -- Used to format JS code
+      "stylua",
+      "prettierd",
+      "vue_ls", -- LSP listed here because it's not set in servers table
+      "vtsls", -- LSP listed here because it's not set in servers table
     })
     require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
