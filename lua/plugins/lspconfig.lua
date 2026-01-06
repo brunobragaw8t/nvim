@@ -45,6 +45,26 @@ return {
           end, "Toggle inlay hints")
         end
 
+        local function organize_imports()
+          local ft = vim.bo.filetype:gsub("react$", "")
+
+          if not vim.tbl_contains({ "javascript", "typescript" }, ft) then
+            print("Organize imports only works for JavaScript and TypeScript files.")
+            return
+          end
+
+          local ok = vim.lsp.buf_request_sync(event.buf, "workspace/executeCommand", {
+            command = (ft .. ".organizeImports"),
+            arguments = { vim.api.nvim_buf_get_name(event.buf) },
+          }, 3000)
+
+          if not ok then
+            print("Command timeout or failed to complete.")
+          end
+        end
+
+        map("goi", organize_imports, "Organize imports")
+
         -- Highlight currently hovered symbol
         if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
           local highlight_augroup = vim.api.nvim_create_augroup("lsp-highlight-group", { clear = false })
