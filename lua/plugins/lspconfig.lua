@@ -127,6 +127,7 @@ return {
       },
       cssls = {},
       jsonls = {},
+      taplo = {},
     }
 
     -- Ensure the servers and tools above are installed
