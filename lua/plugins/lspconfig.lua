@@ -23,7 +23,7 @@ return {
           vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
         end
 
-        map("gd", vim.lsp.buf.definition, "Go to definition")
+        map("gd", require("telescope.builtin").lsp_definitions, "Go to definition(s)")
         map("gD", vim.lsp.buf.declaration, "Go to declaration")
         map("grr", require("telescope.builtin").lsp_references, "vim.lsp.buf.references using Telescope")
         --  Useful when your language has ways of declaring types without an actual implementation.
