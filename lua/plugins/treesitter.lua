@@ -1,7 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "master",
   build = ":TSUpdate",
-  main = "nvim-treesitter.config", -- Sets main module to use for opts
+  main = "nvim-treesitter.configs", -- Sets main module to use for opts
   -- `:help nvim-treesitter`
   opts = {
     ensure_installed = {
@@ -30,5 +31,12 @@ return {
       additional_vim_regex_highlighting = { "ruby" },
     },
     indent = { enable = true, disable = { "ruby" } },
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        node_incremental = "<M-o>",
+        node_decremental = "<M-i>",
+      },
+    },
   },
 }
