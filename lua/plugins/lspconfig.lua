@@ -88,6 +88,13 @@ return {
             end,
           })
         end
+
+        if client and client.name == "eslint" then
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = event.buf,
+            command = "LspEslintFixAll",
+          })
+        end
       end,
     })
 
@@ -148,6 +155,7 @@ return {
       cssls = {},
       jsonls = {},
       taplo = {},
+      eslint = {},
     }
 
     -- Ensure the servers and tools above are installed
