@@ -36,5 +36,10 @@ return {
       -- Conform can run multiple formatters sequentially
       -- python = { "isort", "black" },
     },
+    formatters = {
+      prettierd = {
+        require_cwd = true,
+      },
+    },
   },
 }
