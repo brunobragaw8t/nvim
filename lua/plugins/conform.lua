@@ -29,8 +29,8 @@ return {
     end,
     formatters_by_ft = {
       lua = { "stylua" },
-      typescript = { "prettierd" },
-      typescriptreact = { "prettierd" },
+      typescript = { "oxfmt", "prettierd" },
+      typescriptreact = { "oxfmt", "prettierd" },
       vue = { "prettierd" },
       css = { "prettierd" },
       -- Conform can run multiple formatters sequentially
@@ -38,6 +38,9 @@ return {
     },
     formatters = {
       prettierd = {
+        require_cwd = true,
+      },
+      oxfmt = {
         require_cwd = true,
       },
     },

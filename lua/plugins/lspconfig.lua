@@ -166,6 +166,7 @@ return {
     vim.list_extend(ensure_installed, {
       "stylua",
       "prettierd",
+      "oxfmt",
       "vue_ls", -- LSP listed here because it's not set in servers table
       "vtsls", -- LSP listed here because it's not set in servers table
     })
