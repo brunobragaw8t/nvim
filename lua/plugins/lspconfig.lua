@@ -156,6 +156,7 @@ return {
       jsonls = {},
       taplo = {},
       eslint = {},
+      tailwindcss = {},
     }
 
     -- Ensure the servers and tools above are installed
