@@ -29,6 +29,8 @@ return {
     end,
     formatters_by_ft = {
       lua = { "stylua" },
+      json = { "oxfmt", "prettierd" },
+      javascript = { "oxfmt", "prettierd" },
       typescript = { "oxfmt", "prettierd" },
       typescriptreact = { "oxfmt", "prettierd" },
       vue = { "prettierd" },
