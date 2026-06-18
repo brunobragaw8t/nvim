@@ -32,7 +32,7 @@ return {
       typescript = { "oxfmt", "prettierd" },
       typescriptreact = { "oxfmt", "prettierd" },
       vue = { "prettierd" },
-      css = { "prettierd" },
+      css = { "oxfmt", "prettierd" },
       -- Conform can run multiple formatters sequentially
       -- python = { "isort", "black" },
     },
