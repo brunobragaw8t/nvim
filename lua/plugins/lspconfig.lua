@@ -157,6 +157,7 @@ return {
       taplo = {},
       eslint = {},
       tailwindcss = {},
+      ols = {},
     }
 
     -- Ensure the servers and tools above are installed
